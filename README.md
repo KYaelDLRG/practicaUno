@@ -49,7 +49,7 @@ A continuación, se muestran algunas capturas que demuestran las funcionalidades
 
 | Pantalla Principal (MainActivity) | Demostración de Selección | Pantalla Avanzada (SecondActivity) |
 | :--------------------------------: | :---------------------------: | :----------------------------------: |
-| ![Pantalla principal con 3 tabs y botón de navegación](https://github.com/KYaelDLRG/practicaUno/blob/master/photo_10_2025-09-25_05-04-35.jpg) | ![Fragment de selección interactivo]([ruta/a/screenshot2.png](https://github.com/KYaelDLRG/practicaUno/blob/master/photo_8_2025-09-25_05-04-35.jpg)) | ![Pantalla de listas y barra de regreso]([ruta/a/screenshot3.png](https://github.com/KYaelDLRG/practicaUno/blob/master/photo_6_2025-09-25_05-04-35.jpg)) |
+| ![Pantalla principal con 3 tabs y botón de navegación](https://github.com/KYaelDLRG/practicaUno/blob/master/photo_10_2025-09-25_05-04-35.jpg) | ![Fragment de selección interactivo](https://github.com/KYaelDLRG/practicaUno/blob/master/photo_8_2025-09-25_05-04-35.jpg) | ![Pantalla de listas y barra de regreso](https://github.com/KYaelDLRG/practicaUno/blob/master/photo_6_2025-09-25_05-04-35.jpg) |
 
 *(Nota: Debes reemplazar `ruta/a/screenshot.png` con la ubicación real de tus capturas de pantalla dentro del proyecto para que se visualicen).*
 
