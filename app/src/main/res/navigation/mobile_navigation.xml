@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_text_fields">
+
+    <fragment
+        android:id="@+id/navigation_text_fields"
+        android:name="com.example.practicauno.ui.TextFieldFragment"
+        android:label="Campos de Texto"
+        tools:layout="@layout/fragment_text_field" />
+
+    <fragment
+        android:id="@+id/navigation_buttons"
+        android:name="com.example.practicauno.ui.ButtonFragment"
+        android:label="Botones"
+        tools:layout="@layout/fragment_button" />
+
+    <fragment
+        android:id="@+id/navigation_selection"
+        android:name="com.example.practicauno.ui.SelectionFragment"
+        android:label="Elementos de Selección"
+        tools:layout="@layout/fragment_selection" />
+
+</navigation>

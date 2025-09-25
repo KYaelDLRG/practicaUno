@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".ui.SelectionFragment">
+
+        <TextView
+            android:id="@+id/title_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✅ Elementos de Selección"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/explanation_selection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="💡 Permiten al usuario elegir opciones. CheckBox para selecciones múltiples, RadioButton para una sola opción de un grupo y Switch para estados de encendido/apagado."
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_selection" />
+
+        <TextView
+            android:id="@+id/demo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="⚡ Demostración Interactiva"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/explanation_selection" />
+
+        <CheckBox
+            android:id="@+id/checkbox_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Acepto los términos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/demo_title" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkbox_demo">
+
+            <RadioButton
+                android:id="@+id/radio_button_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opción A" />
+
+            <RadioButton
+                android:id="@+id/radio_button_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opción B" />
+        </RadioGroup>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Activar notificaciones"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/radio_group_demo" />
+
+        <Button
+            android:id="@+id/check_status_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Verificar Estado"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/switch_demo" />
+
+        <TextView
+            android:id="@+id/selection_result_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Resultados aparecerán aquí."
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check_status_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

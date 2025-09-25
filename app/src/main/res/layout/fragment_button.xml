@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.ButtonFragment">
+
+    <TextView
+        android:id="@+id/title_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎨 Botones (Button, ImageButton)"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/explanation_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="💡 Inician una acción cuando el usuario los toca. Pueden contener texto, un ícono o ambos."
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_button" />
+
+    <TextView
+        android:id="@+id/demo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="⚡ Demostración Interactiva"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/explanation_button" />
+
+    <Button
+        android:id="@+id/demo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Púlsame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/demo_title" />
+
+    <ImageButton
+        android:id="@+id/demo_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:contentDescription="Botón de imagen de ejemplo"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="@id/demo_button"
+        app:layout_constraintStart_toEndOf="@id/demo_button"
+        app:layout_constraintTop_toTopOf="@id/demo_button" />
+
+    <TextView
+        android:id="@+id/button_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Esperando acción..."
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/demo_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
